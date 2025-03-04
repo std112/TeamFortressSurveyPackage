@@ -99,8 +99,8 @@
             white-space: pre-line;
         }
         .claim-button {
-            position: absolute;
-            bottom: 100px;
+            position: fixed; /* Changed from absolute to fixed */
+            bottom: 50px; /* Adjusted position */
             padding: 15px 30px;
             font-size: 1.2rem;
             font-weight: bold;
@@ -112,6 +112,7 @@
             text-transform: uppercase;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
             transition: transform 0.2s, box-shadow 0.2s;
+            z-index: 999; /* Ensures button is on top */
         }
         .claim-button:hover {
             transform: scale(1.1);
